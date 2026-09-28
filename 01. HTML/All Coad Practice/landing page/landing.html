@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: aliceblue;
+        }
+
+        *{
+            padding: 0px;
+            margin: 0px;
+            border-radius: border-box;
+        }
+        .head_box{
+            background-image: url(./home.jpeg);
+            background-size: cover ;
+            background-position: center center;
+            text-align: center;
+            align-items: center;
+            color: white;
+            padding:50px 20px;
+        }
+        .heading{
+            font-size: 2.5rem;
+            margin-bottom: 20px;    
+            margin-top: 20px;        
+        }   
+        .paira{
+           margin:35px;
+           font-size: 1.2rem;
+        }
+        .button_box{
+            padding: 10px 25px;
+            background-color: rgba(21, 122, 255, 0.923);
+            color: white;
+            border-radius: 10px;
+            border: none;
+            font-size: 0.899rem;
+        }    
+        .button_box:hover{
+            background-color: rgb(13, 13, 159);
+            transition: 0.4s ease-in;
+        }
+
+        
+        .article_box{
+            display: flex;
+            margin: 20px;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            
+        }
+
+        .article_box_left{
+            padding: 30px 16px;
+            margin: 10px; 
+            border-radius: 5px; 
+        }
+
+        .article_box_left:hover{
+            box-shadow: 2px 3px 14px black;
+            transition: 0.4s;
+            transform: translateX(20px);
+            transform: translateY(20px);
+            transform: translateZ(20px);
+
+        }
+
+        .article_box_left h1{
+            font-size: 1.5rem;
+            
+        }
+
+        .article_box_left p{
+            padding-top: 10px;
+        }
+
+        .footer_box{
+            color: white;
+            background-color: rgba(0, 0, 0, 0.788);
+            text-align: center;
+            padding: 25px;
+
+        }
+
+    </style>
+</head>
+<body>
+
+    <header class="head_box">
+        <h1 class="heading">Welcome to Our Service</h1>
+        <p class="paira">Discover the future of online experience.</p>
+        <button type="button" class="button_box">Learn More
+        </button>
+    </header>
+
+    <article class="article_box" >
+        <div class="article_box_left">
+            <h1>Feature One</h1>
+            <p>Description of Feature One.</p>
+        </div>
+        <div class="article_box_left">
+            <h1>Feature Two</h1>
+            <p>Description of Feature Two.</p>
+        </div>
+    </article>
+
+
+    <footer class="footer_box">
+        <p>&#169; 2023 Dynamic Landing Page. All rights reserved. </p>
+    </footer>
+    
+</body>
+</html>

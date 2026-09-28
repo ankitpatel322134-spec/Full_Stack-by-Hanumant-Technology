@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .mybox {
+        border: 5px solid grey;
+        margin: 10px;
+        overflow: visible;
+        overflow: hidden;
+        overflow: scroll;
+        overflow: hidden;
+         background-image: url('https://cdn.pixabay.com/photo/2015/04/19/08/32/flower-729510_1280.jpg'); 
+        color: rgb(0, 0, 0);
+        background-size: cover;
+        background-position: center;
+        position: relative;
+      }
+
+      .mybox video {
+        position: absolute;
+        z-index: -1;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        opacity: 0.3;
+      }
+
+      .para {
+        /* visibility: visible;
+        visibility: hidden; */
+
+        /* visibility: hidden; */
+        display: none;
+        display: block;
+        display: flex;
+      }
+
+      .container1 {
+        height: 300px;
+        border: 4px solid red;
+        margin: 5px;
+
+        background-image: linear-gradient(
+          to right,
+          rgb(248, 165, 165),
+          rgb(161, 161, 250),
+          rgb(248, 248, 157)
+        );
+        background-image: linear-gradient(
+          to bottom,
+          rgb(248, 165, 165),
+          rgb(161, 161, 250),
+          rgb(248, 248, 157)
+        );
+        background-image: linear-gradient(
+          to bottom left,
+          rgb(248, 165, 165),
+          rgb(161, 161, 250),
+          rgb(248, 248, 157)
+        );
+        background-image: linear-gradient(
+          to bottom,
+          white,
+          rgb(245, 142, 142),
+          rgb(115, 243, 115),
+          rgba(247, 247, 121, 0.637),
+          rgb(245, 142, 142),
+          rgba(255, 0, 0, 0.514),
+          rgba(0, 0, 0, 0.432),
+          rgba(255, 166, 0, 0.534),
+          rgba(0, 0, 255, 0.568),
+          rgba(255, 192, 203, 0.514),
+          white
+        );
+      }
+      .container2 {
+        height: 300px;
+        border: 4px solid red;
+        margin: 5px;
+       
+
+        background-image: radial-gradient(
+          rgb(245, 142, 142),
+          rgb(115, 243, 115),
+          rgb(247, 247, 121)
+        );
+        background-image: radial-gradient(
+          white,
+          rgb(245, 142, 142),
+          rgb(115, 243, 115),
+          rgb(247, 247, 121),
+          rgb(245, 142, 142),
+          red,
+          black,
+          orange,
+          blue,
+          pink,
+          white
+        );
+      }
+      .container3 {
+        height: 300px;
+        border: 4px solid red;
+        margin: 5px;
+
+        background-image: conic-gradient(
+          white,
+          rgb(245, 142, 142),
+          rgb(115, 243, 115),
+          rgb(247, 247, 121),
+          rgb(245, 142, 142),
+          red,
+          black,
+          orange,
+          blue,
+          pink,
+          white
+        );
+      }
+      .container4 {
+        height: 350px;
+        border: 4px solid red;
+        margin: 5px;
+
+        /* background-image:
+          linear-gradient(
+            to bottom,
+            rgba(255, 255, 255, 0.486),
+            rgba(245, 142, 142, 0.445),
+            rgba(115, 243, 115, 0.555),
+            rgba(247, 247, 121, 0.541),
+            rgba(245, 142, 142, 0.486),
+            rgba(255, 0, 0, 0.384),
+            rgba(0, 0, 0, 0.486),
+            rgba(255, 166, 0, 0.473),
+            rgba(0, 0, 255, 0.479),
+            rgba(255, 192, 203, 0.411),
+            rgba(255, 255, 255, 0.418)
+          ),
+          linear-gradient(
+            to left,
+            rgba(255, 255, 255, 0.486),
+            rgba(245, 142, 142, 0.445),
+            rgba(115, 243, 115, 0.555),
+            rgba(247, 247, 121, 0.541),
+            rgba(245, 142, 142, 0.726),
+            rgba(255, 0, 0, 0.486),
+            rgba(0, 0, 0, 0.486),
+            rgba(255, 166, 0, 0.699),
+            rgba(0, 0, 255, 0.479),
+            rgba(255, 192, 203, 0.411),
+            rgba(255, 255, 255, 0.418)
+          ),
+          conic-gradient(
+            white,
+            rgb(245, 142, 142),
+            rgb(115, 243, 115),
+            rgb(247, 247, 121),
+            rgb(245, 142, 142),
+            red,
+            black,
+            orange,
+            rgba(0, 0, 255, 0.493),
+            pink,
+            white
+          ); */
+
+        background-image:
+          linear-gradient(rgba(255, 0, 0, 0.349), rgba(0, 128, 0, 0.781), rgba(0, 0, 255, 0.39), rgba(255, 166, 0, 0.425)), linear-gradient(to left,rgba(255, 0, 0, 0.856), rgba(0, 128, 0, 0.733), rgba(0, 0, 255, 0.979), rgba(255, 166, 0, 0.733));
+
+
+          background-image: repeating-linear-gradient(rgba(255, 0, 0, 0.521) 0% 5%, rgba(0, 128, 0, 0.493) 5% 10%, rgba(255, 166, 0, 0.534) 10% 15% ), repeating-linear-gradient( to left, rgba(255, 0, 0, 0.562) 0% 5%, rgba(0, 128, 0, 0.507) 5% 10%, rgba(255, 166, 0, 0.514) 10% 15% ), repeating-conic-gradient(rgba(255, 0, 0, 0.685) 0% 5%, rgba(0, 128, 0, 0.76) 5% 10%, rgba(255, 166, 0, 0.712) 10% 15%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="mybox">
+      <video src="./bgvideo.mp4" autoplay muted loop></video>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta est nemo
+        expedita delectus unde nostrum voluptatum accusantium nam eius?
+        Consequuntur dolor odit vel provident facilis harum id consequatur eius
+        doloremque.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta est nemo
+        expedita delectus unde nostrum voluptatum accusantium nam eius?
+        Consequuntur dolor odit vel provident facilis harum id consequatur eius
+        doloremque.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta est nemo
+        expedita delectus unde nostrum voluptatum accusantium nam eius?
+        Consequuntur dolor odit vel provident facilis harum id consequatur eius
+        doloremque.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta est nemo
+        expedita delectus unde nostrum voluptatum accusantium nam eius?
+        Consequuntur dolor odit vel provident facilis harum id consequatur eius
+        doloremque.
+      </p>
+      <p class="para">
+        5555555555555Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Dicta est nemo expedita delectus unde nostrum voluptatum accusantium nam
+        eius? Consequuntur dolor odit vel provident facilis harum id consequatur
+        eius doloremque.
+      </p>
+      <p class="para">
+        5555555555555Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Dicta est nemo expedita delectus unde nostrum voluptatum accusantium nam
+        eius? Consequuntur dolor odit vel provident facilis harum id consequatur
+        eius doloremque.
+      </p>
+      <p class="para">
+        5555555555555Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Dicta est nemo expedita delectus unde nostrum voluptatum accusantium nam
+        eius? Consequuntur dolor odit vel provident facilis harum id consequatur
+        eius doloremque.
+      </p>
+      <p class="para">
+        5555555555555Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Dicta est nemo expedita delectus unde nostrum voluptatum accusantium nam
+        eius? Consequuntur dolor odit vel provident facilis harum id consequatur
+        eius doloremque.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta est nemo
+        expedita delectus unde nostrum voluptatum accusantium nam eius?
+        Consequuntur dolor odit vel provident facilis harum id consequatur eius
+        doloremque.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta est nemo
+        expedita delectus unde nostrum voluptatum accusantium nam eius?
+        Consequuntur dolor odit vel provident facilis harum id consequatur eius
+        doloremque.
+      </p>
+    </div>
+
+    <div class="container1"></div>
+    <div class="container2"></div>
+    <div class="container3"></div>
+    <div class="container4"></div>
+  </body>
+</html>

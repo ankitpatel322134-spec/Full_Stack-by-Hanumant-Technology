@@ -1,0 +1,144 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    margin: 80px 0px;
+    align-items: center;
+}
+.loadingbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 80px auto;
+    position: relative;
+    
+    img{
+        height: 20vmin;
+        width: 20vmin;
+        border-radius:100%;
+    }
+}
+.loadingbox1{
+    position:absolute;
+    height: 20vmin;
+    width: 20vmin;
+    border-radius: 100%;
+    border: 3px solid black;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.931);
+}
+#loading1{
+    animation: yt_box 2s linear infinite ;
+}
+#loading2{
+    animation: yt_box 2s linear infinite 1s;
+}
+@keyframes yt_box{
+    to{
+        transform:scale(2);
+        opacity: 0;
+    }
+}
+
+.box{
+    margin: 20px auto;
+    height: 100px ;
+    width: 100px;
+    border: 9px solid ;
+    border-color: rgb(37, 37, 197)   rgb(37, 37, 197)  transparent ;
+    border-radius: 50%;
+    animation: box 3s linear infinite;
+}
+@keyframes box{
+    to{
+        transform:rotate(2turn)
+    }
+}
+
+
+
+
+.soundbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 0px auto;
+    height: 200px;
+    width: 200px;
+    padding: 50px;
+    i{
+        font-size: 50px;
+        color: white;
+        background-color: #26D068;
+        border-radius: 200px;
+        padding: 43px;
+    }
+}
+.soundbox1{
+    position: absolute;
+    height: 70%;
+    width: 70%;
+    border: 3px solid;
+    border-color:green  ;
+    border-radius: 50%;
+}
+#soundvolum1{
+    animation: soundvolum 6s linear infinite 0s ;
+}
+
+#soundvolum2{
+    animation: soundvolum 6s linear infinite 2s;
+}
+#soundvolum3{
+    animation:soundvolum 6s linear infinite 4s;
+}
+@keyframes soundvolum{
+    to{
+        transform:scale(2);
+        opacity: 0;
+    }
+}
+
+
+.rington{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin: 50px auto;
+    height: 150px;
+    width:150px;
+    padding: 50px;
+    position:relative;
+    border-radius: 50%;
+   
+    i{
+       font-size: 7rem;
+        border-radius: 50%;
+        
+        
+    }
+}
+.ringtonbox{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border: 3px solid rgb(12, 15, 16);
+    border-radius: 50%;
+}
+#rington1{
+    animation:ringtonbox 2s linear infinite 0s;
+}
+#rington2{
+    animation:ringtonbox 2s linear infinite 1s;
+}
+@keyframes ringtonbox{
+    to{
+        transform:scale(2);
+        opacity: 0;
+    }
+}

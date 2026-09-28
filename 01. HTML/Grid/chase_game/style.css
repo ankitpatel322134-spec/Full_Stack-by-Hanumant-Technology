@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url(./images.jpg);
+    background-size: cover;
+    
+}
+
+
+.chase_game{
+    border: 2px solid black;
+    margin: 100px  auto;
+    height: 90vmin;
+    width: 90vmin;
+    background-color: rgb(107, 91, 91);    
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(8,1fr);
+    
+    padding: 15px;
+    box-shadow:0px 0px 20px rgb(237, 22, 58) inset;
+}
+.white{
+    background-color: white;
+}
+.black{
+    background-color: black;
+}

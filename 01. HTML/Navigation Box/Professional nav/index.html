@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>professional nav box</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            border-radius: border-box;
+        }
+        body{
+            font-family:Arial, Helvetica, sans-serif;;
+            background-color: #1E1E1E;
+        }
+        header{
+            padding: 15px;
+            background-color: #2A2A2A;
+            border: 1px solid rgba(255, 255, 255, 0.107);
+            h1{
+                color: white;
+                font-size: 20px;
+                display: inline-block;
+
+            }
+            .nav_box{
+                float: right;
+                margin-right:400px ;
+                a{
+                    text-decoration: none;
+                    color: #ffffffdf;
+                    font-size: 11px;
+                    font-family: sans-serif;
+                    padding: 0px 10px ;
+                }
+                a:hover{
+                    text-decoration: underline;
+                    padding-bottom:5px;
+                }
+
+                .temp{
+                    color: yellow ;
+                }
+            }
+
+        }
+        .select_box{
+            float: right;
+            label{
+                color: #ffffffb5;
+                font-size: 12px;
+            }
+            label:hover{
+                color: #ffffffdf;
+            }
+            select{
+                background-color: #2A2A2A;
+                color: #ffffff8b;
+                option{
+                    color: #ffffff8b;
+                    margin: 15px 15px;
+                }
+                
+            }
+            .button{
+                text-decoration: none;
+                color:white;
+                background: #2A7B9B;
+                background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+                padding: 10px 15px ; 
+                border-radius: 20px;
+                margin-left:10px;
+            }
+            
+            
+
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>UNSECTION</h1>
+        <div class="nav_box">
+            <a href="#section">SECTION</a>
+            <a href="#community">COMMUNITY</a>
+            <a href="#hover_effects">HOVER EFFECTS</a>
+            <a href="#svg">SVG</a>
+            <a href="#templates" class="temp">TEMPLATES</a>
+        </div>
+
+        <div class="select_box">
+            <label for="SPONSOR">MORE
+                
+            </label>
+            <select name="SPONSOR" id="SPONSOR">
+                <option value="Sponsor">SPONSOR</option>
+                <option value="studio">STUDIO</option>
+                <option value="About">ABOTU</option>
+                <option value="Feedback">FEEDBACK</option>
+                <option value="Twitter">TWITTER</option>
+                <option value="privacy">PRIVACY</option>
+            </select>
+            <a href="#botton" class="button">Access App</a>
+        </div>
+    </header>
+    
+</body>
+</html>

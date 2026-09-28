@@ -1,0 +1,778 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.navigation_box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  width: 100%;
+  position: fixed;
+  z-index: 394;
+  top: 0px;
+  background-color:lightblue;
+  height: 70px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.104);
+  h1 {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    img {
+      width: 30px;
+    }
+  }
+}
+.nav_box {
+  display: flex;
+  align-items: center;
+  li {
+    list-style: none;
+    padding: 0px 10px;
+    a {
+      text-decoration: none;
+      color: black;
+      font-weight: 500;
+    }
+    a:hover {
+      color: #71818c;
+    }
+  }
+}
+.menu_box {
+  display: none;
+}
+
+.hero_section {
+  margin-top: 70px;
+  background-image:
+    radial-gradient(
+      circle at top right,
+      rgba(255, 255, 255, 0) 20%,
+      rgba(1, 77, 183, 0.9) 100%
+    ),
+    url(./download.jpg);
+  background-size: cover;
+  background-position: right center;
+  /* padding: 100px 100px 100px 100px; */
+  color: white;
+  div h2 {
+    font-size: 17px;
+    text-transform: uppercase;
+    color: #e1eaf8;
+  }
+  div h1 {
+    font-size: 42px;
+    line-height: 1.5;
+    padding: 15px 0px;
+  }
+  div p {
+    font-size: 20px;
+    color: #e1eaf8;
+  }
+  div button {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 40px;
+    background-color: #ff5473;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.621);
+    margin-top: 40px;
+    font-weight: bold;
+    color: white;
+  }
+  div button:hover {
+    background-color: #ff6b86;
+    transition: all 0.9s linear 0.2;
+  }
+
+  .image_box {
+    background-image: url("./download\ 1.svg");
+    background-size: 100% 50px;
+    bottom: 0;
+    height: 50px;
+    z-index: 1;
+    transform: scale(-1, 1);
+  }
+}
+.hero_top_bottom {
+  width: 70%;
+  padding: 100px;
+}
+.hero_section_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 0px 100px 100px 100px;
+  article {
+    display: flex;
+
+    gap: 15px;
+    img {
+      height: 70px;
+      width: 70px;
+    }
+    h1 {
+      font-size: 18px;
+      padding: 0px 0px;
+    }
+    p {
+      text-transform: none;
+      font-size: 14px;
+      line-height: 30px;
+      color: white;
+      padding: 10px 0px;
+      font-weight: 500;
+    }
+    a {
+      color: white;
+      font-size: bold;
+      text-decoration: #2dc2dd underline;
+      font-size: 15px;
+    }
+  }
+}
+
+.loging_page {
+  display: flex;
+  justify-content: center;
+
+  gap: 30px;
+  padding: 80px 80px;
+}
+
+.login_aside_box {
+  flex: 1;
+  img {
+    width: 100%;
+  }
+}
+
+.login_article_box {
+  flex: 1;
+  p {
+    color: #ffb342;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 20px;
+  }
+  h1 {
+    color: #333333;
+    font-size: 45px;
+    padding: 20px 0px;
+  }
+  a {
+    color: #666666;
+    font-size: 12px;
+    text-decoration: underline #666666;
+    display: block;
+  }
+  button {
+    width: 100%;
+    padding: 20px;
+    border: none;
+    border-radius: 40px;
+    background-color: #014db7;
+    color: white;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  button:hover {
+    background-color: #3471c5;
+  }
+}
+.input_box {
+  width: 100%;
+  border: none;
+  border-radius: 40px;
+  padding: 20px 18px;
+  background-color: #f5f5f5;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.clinic_card_box {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 80px 100px;
+}
+
+.clinic_card {
+  flex: 1;
+  img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  h1 {
+    color: #333333;
+    font-size: 18px;
+    padding: 20px 0px;
+  }
+  p {
+    font-size: 14px;
+    color: #333333;
+    line-height: 30px;
+    margin-bottom: 30px;
+  }
+  li {
+    list-style-type: none;
+    a {
+      text-decoration: none;
+      color: #175fc3;
+      background-color: #e5edf8;
+      padding: 12px 30px;
+      border: none;
+      border-radius: 40px;
+    }
+  }
+}
+
+.Sign_up_box {
+  display: flex;
+  justify-content: center;
+  /* align-items: flex-end; */
+  /* gap: 40px; */
+  padding: 80px 100px;
+}
+.singup_left_box {
+  flex: 1;
+}
+.singUp_card {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 40px;
+  border-radius: 10px;
+  width: 100%;
+  a i {
+    font-size: 32px;
+    padding: 25px;
+    color: white;
+    border-radius: 100%;
+  }
+  a {
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 600;
+    padding-top: 20px;
+  }
+}
+.image1 {
+  background-image:
+    radial-gradient(
+      circle at right,
+      rgba(138, 182, 247, 0.3) 20%,
+      #8ab6f7 100%
+    ),
+    url(./download.jpg);
+  background-position: center right;
+  background-size: cover;
+}
+.image2 {
+  margin: 20px 0px;
+  background-image:
+    radial-gradient(
+      circle at right,
+      rgba(249, 192, 203, 0.3) 20%,
+      #f9c0cb 100%
+    ),
+    url(./c0ddcda1-0773-4c3c-9929-594ba477abaa.jpg);
+  background-size: cover;
+  background-position: center right;
+}
+.image3 {
+  background-image:
+    radial-gradient(
+      circle at right,
+      rgba(255, 226, 181, 0.3) 20%,
+      #ffe2b5 100%
+    ),
+    url(./download\ 55.jpg);
+  background-size: cover;
+}
+
+.singup_right_box {
+  flex: 1;
+  padding: 50px 50px;
+  width: 100%;
+
+  h2 {
+    color: #ffb342;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  h1 {
+    font-size: 38px;
+    color: #333333;
+    line-height: 60px;
+    padding: 25px 0px;
+  }
+  p {
+    color: #666666;
+    line-height: 30px;
+    font-weight: 500;
+    margin-bottom: 30px;
+  }
+  li {
+    list-style-type: none;
+    a {
+      text-decoration: none;
+      padding: 20px 30px;
+      border: none;
+      border-radius: 40px;
+      font-weight: 550;
+      color: white;
+      background-color: #ff5473;
+      box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.164);
+    }
+    a:hover {
+      background-color: #ff6b86;
+    }
+  }
+}
+
+.save_upto_container {
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 50px 100px;
+  gap: 20px;
+  background-image:
+    radial-gradient(
+      circle at right,
+      rgba(1, 77, 183, 0.2) 0%,
+      rgba(1, 77, 183, 0.85) 50%
+    ),
+    url(./pharmacy-04.jpg);
+  background-size: cover;
+  background-position: center right;
+}
+.save_upto_left_box {
+  flex: 1;
+  padding: 0px 100px;
+  h2 {
+    font-size: 30px;
+  }
+  h1 {
+    font-size: 120px;
+  }
+  p {
+    font-weight: 550;
+    word-spacing: 3px;
+    line-height: 25px;
+  }
+}
+.save_upto_right_box {
+  flex: 2;
+  width: 100%;
+  h2 {
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+  h1 {
+    font-size: 35px;
+    line-height: 45px;
+    padding: 20px 0px;
+  }
+  p {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 30px;
+    margin-bottom: 30px;
+  }
+  li {
+    list-style: none;
+    a {
+      text-decoration: none;
+      padding: 20px 30px;
+      background-color: #ff5473;
+      border: none;
+      border-radius: 40px;
+      color: white;
+      font-weight: bold;
+      box-shadow: 3px 7px 15px rgba(0, 0, 0, 0.232);
+    }
+  }
+}
+
+.about_us_container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 80px 100px;
+  background-color: #0c4a7c;
+  color: white;
+}
+
+.about_left_box {
+  flex: 1;
+  h2 {
+    font-size: 16px;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    text-transform: uppercase;
+  }
+  h1 {
+    padding: 20px 0px;
+    font-size: 35px;
+    line-height: 50px;
+  }
+  p {
+    line-height: 30px;
+    font-weight: 550;
+    margin-bottom: 50px;
+  }
+  li {
+    list-style: none;
+    a {
+      text-decoration: none;
+      padding: 15px 30px;
+      background-color: #ff5473;
+      border: none;
+      border-radius: 40px;
+      color: white;
+      font-weight: bold;
+      box-shadow: 1px 5px 15px rgba(0, 0, 0, 0.197);
+    }
+    a:hover {
+      background-color: #ff6b86;
+    }
+  }
+}
+.about_right_box {
+  flex: 1;
+  display: flex;
+  .logo_image img {
+    width: 100%;
+  }
+}
+
+.live_chat_support {
+  text-align: start;
+  background-image: url(./pharmacy-17.jpg);
+  background-size: cover;
+}
+.live_chat_box {
+  padding: 80px 200px 80px 400px;
+  color: #333333;
+  h2 {
+    font-size: 17px;
+    text-transform: uppercase;
+    color: #fa546d;
+    font-weight: 550;
+  }
+  h1 {
+    font-size: 40px;
+    line-height: 50px;
+    padding: 10px 0px;
+  }
+  p {
+    line-height: 30px;
+    font-weight: 500;
+    margin-bottom: 30px;
+  }
+  li {
+    list-style: none;
+    a {
+      text-decoration: none;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 40px;
+      background-color: #014db7;
+      color: white;
+      font-weight: bolder;
+      box-shadow: 1px 4px 15px rgba(0, 0, 0, 0.222);
+    }
+    a:hover {
+      background-color: #175fc3;
+    }
+  }
+}
+/* .image_container{
+  background-image: url(./download.svg);
+  height: 50px;
+  width:100%;
+  border-top-right-radius:100%; 
+  position: relative;
+  z-index: 1;
+} */
+
+.product_container {
+  padding: 80px 100px;
+  text-align: center;
+  h1 {
+    color: #333333;
+    font-size: 40px;
+  }
+  .bottonbox12 {
+    list-style-type: none;
+    a {
+      text-decoration: none;
+      color: white;
+      background-color: #fa546d;
+      padding: 20px 30px;
+      border: none;
+      border-radius: 40px;
+      box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.156);
+    }
+    a:hover {
+      background-color: #ff5473;
+    }
+  }
+}
+.product_container_box {
+  display: flex;
+  text-align: start;
+  gap: 35px;
+  padding: 70px 0px;
+  div {
+    img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    p {
+      font-weight: bold;
+      color: #333333;
+      padding: 10px 0px;
+    }
+    li {
+      list-style-type: none;
+      a {
+        text-decoration: none;
+        color: #ffb342;
+        font-weight: 500;
+        i {
+          font-size: 10px;
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+}
+
+.subscribe_button {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 50px 100px;
+  background-image:
+    radial-gradient(
+      circle at top right,
+      rgba(1, 77, 183, 0.5) 0%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    url(./pharmacy-04.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+.address_box {
+  flex: 1;
+  .address_flex {
+    display: flex;
+    gap: 20px;
+    padding: 30px 30px;
+  }
+  .address_card {
+    text-align: center;
+    i {
+      padding: 30px;
+      border: none;
+      border-radius: 100px;
+      background-color: #155bbc;
+      font-size: 20px;
+      color: white;
+    }
+    p {
+      color: white;
+      font-weight: 550;
+      padding: 20px;
+    }
+    a {
+      color: #155bbc;
+      text-decoration: none;
+      font-weight: 500;
+    }
+  }
+}
+
+.subscribe_article {
+  flex: 1;
+  h1 {
+    font-size: 44px;
+    color: white;
+  }
+  input {
+    border: none;
+    padding: 18px 0px;
+    width: 100%;
+    border-radius: 40px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 20px 0px;
+    margin-bottom: 30px;
+  }
+  li {
+    list-style: none;
+    a {
+      text-decoration: none;
+      border: none;
+      border-radius: 40px;
+      width: 100%;
+      text-align: center;
+      padding: 18px 0px;
+      display: block;
+      color: white;
+      font-size: 17px;
+      font-weight: 500;
+      background-color: #175fc3;
+    }
+  }
+}
+
+
+footer {
+  background-color: #171717;
+  color: #575656;
+  display: flex;
+  justify-content: space-between;
+  padding: 17px 100px;
+  p {
+    font-size: 13px;
+  }
+  div {
+    i {
+      font-size: 25px;
+      padding: 0px 20px;
+    }
+  }
+}
+
+
+
+
+
+
+@media screen and (max-width: 900px) {
+  .hero_section_container {
+    article {
+      flex-direction: column;
+    }
+  }
+  .loging_page {
+    flex-direction: column;
+    .ogin_aside_box {
+      width: 100%;
+    }
+  }
+  .clinic_card_box {
+    flex-direction: column;
+    padding: 80px 50px;
+  }
+  .Sign_up_box {
+    flex-direction: column;
+  }
+  .save_upto_container {
+    flex-direction: column;
+  }
+  .save_upto_left_box {
+    padding: 0px 50px;
+  }
+  .save_upto_right_box {
+    padding: 80px 0px;
+  }
+  .about_us_container {
+    flex-direction: column;
+  }
+  .live_chat_box {
+    padding: 40px 100px 40px 200px;
+  }
+  .product_container {
+    padding: 80px 100px;
+  }
+  .product_container_box {
+    flex-direction: column;
+  }
+  .subscribe_button {
+    flex-direction: column;
+    padding: 50px 60px;
+  }
+  footer{
+    flex-direction: column;
+    gap: 20px;
+    align-items:  center;
+    padding: 17px 70px;
+
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .nav_box {
+    display: none;
+  }
+  .hero_top_bottom {
+    padding: 50px 30px;
+  }
+  .menu_box {
+    display: block;
+  }
+  .hero_top_bottom {
+    width: 100%;
+  }
+  .hero_section_container {
+    flex-direction: column;
+    padding: 4px 30px;
+  }
+  .loging_page {
+    padding: 40px 30px;
+  }
+  .clinic_card_box {
+    padding: 40px 30px;
+  }
+  .Sign_up_box {
+    padding: 40px 30px;
+  }
+  .singup_right_box {
+    padding: 30px 15px;
+    h1 {
+      font-weight: 30px;
+    }
+  }
+  .save_upto_container {
+    padding: 20px 50px;
+  }
+  .save_upto_left_box {
+    padding: 0px 20px;
+  }
+  .save_upto_right_box {
+    padding: 40px 0px;
+  }
+  .about_us_container {
+    padding: 40px 50px;
+  }
+  .about_right_box {
+    flex-direction: column;
+  }
+  .live_chat_box {
+    padding: 40px 30px 40px 30px;
+  }
+
+  .product_container {
+    padding: 40px 30px;
+  }
+  .subscribe_button {
+   
+    padding: 40px 30px;
+  }
+  .address_flex{
+    flex-direction: column;
+  }
+  footer{
+    padding: 10px 30px;
+  }
+}
